@@ -13,7 +13,7 @@ import requests
 UK_TZ = pytz.timezone("Europe/London")
 
 # Kept hard-coded intentionally, per current requirement.
-POWER_AUTOMATE_WEBHOOK = "https://default5668021c34de4215a3e77791e4b6d5.04.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/f843cec202244a81805e51209390db60/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=vUTFHzOQtTDF-kO6533yxi9NR1CPe28DCKdXP-5-h_I"
+POWER_AUTOMATE_WEBHOOK = "https://default5668021c34de4215a3e77791e4b6d5.04.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/15ad2b69b8ce4d54a6d50a42755f5b5b/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=HVURVit5ytt-9bzxUKz9TG3aHWjeVKixV2Mcr__8FEc"
 
 AUTH_URL = "https://www.humanity.com/oauth2/token.php"
 SHIFTS_URL = "https://www.humanity.com/api/v2/shifts"
