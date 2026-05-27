@@ -4,8 +4,6 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [who-is-on-cas-today]
-  schedule:
-    - cron: "0 7 * * *"
 
 jobs:
   send-shift-report:
