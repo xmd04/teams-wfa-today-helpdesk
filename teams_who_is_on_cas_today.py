@@ -77,9 +77,15 @@ def get_humanity_credentials() -> Dict[str, str]:
 
 def safe_first_employee(shift: dict) -> Optional[dict]:
     employees = shift.get("employees") or []
-    if not employees:
-        return None
-    return employees[0] or None
+    for employee in employees:
+        if not employee:
+            continue
+        if str(employee.get("status", "1")) == "-1":
+            name = (employee.get("name") or "Unknown").strip().title()
+            logger.info(f"⏭️ Skipping inactive employee: {name} (status=-1)")
+            continue
+        return employee
+    return None
 
 
 def normalize_employee_name(employee: Optional[dict]) -> str:
