@@ -54,7 +54,7 @@ CAS_ONLY_TEAM = TeamConfig(
         "936220": "CAS",  # Only CAS
     },
     window_start_hour=7,
-    window_end_hour=24,
+    window_end_hour=18,
     cutoff_hour=23,
     send_empty_card=True,
 )
